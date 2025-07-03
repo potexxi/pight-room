@@ -1,10 +1,17 @@
 import tkinter as tk
 
-screen = tk.Tk()
-text = tk.Label(text="Test", background="red")
-text.pack()
 
-button = tk.Button(text="Drück mich nicht!")
-button.pack()
+def main() -> None:
+    """Main Funktion"""
+    screen = tk.Tk(className = "pightroom")
+    text = tk.Label(screen, text = "Potexxi's Pightroom", background = "lightyellow", font=("Arial", 20, "bold"))
+    text.place(x=100, y=10)
 
-screen.mainloop()
+    button = tk.Button(text="Drück mich nicht!")
+    button.pack()
+
+    screen.mainloop()
+
+
+if __name__ == "__main__":
+    main()
