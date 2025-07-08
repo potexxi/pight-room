@@ -5,6 +5,10 @@ import src.submodule.globals as g
 
 
 def export_path(status_label_path: tkinter.Label) -> None:
+    """
+    Select where the finish pictures shall be exported
+    :param status_label_path: the status_label, the text, in which path the user is currently
+    """
     g.EXPORT_PATH = filedialog.askdirectory()
     status_label_path.config(text=f"current Path: {g.EXPORT_PATH}")
 
